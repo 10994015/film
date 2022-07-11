@@ -140,8 +140,8 @@ header#header > #menu {
 
 #index #banner > a {
   display: block;
-  width: 250px;
-  height: 60px;
+  width: 300px;
+  height: 70px;
   text-align: center;
   line-height: 60px;
   position: absolute;
@@ -158,14 +158,16 @@ header#header > #menu {
 @media screen and (max-width: 1060px) {
   #index #banner > a {
     width: 400px;
-    height: 80px;
+    height: 90px;
+    font-size: 48px;
   }
 }
 
 @media screen and (max-width: 500px) {
   #index #banner > a {
+    font-size: 48px;
     width: 80%;
-    height: 80px;
+    height: 90px;
   }
 }
 
@@ -195,10 +197,6 @@ header#header > #menu {
   right: 20px;
   -webkit-transform: translateY(-50%);
           transform: translateY(-50%);
-}
-
-#index #banner > a > img {
-  width: 250px;
 }
 
 #index #banner > a > p {

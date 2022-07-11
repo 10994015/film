@@ -99,8 +99,8 @@ header#header{
         }
         >a{
             display: block;
-            width:250px;
-            height: 60px;
+            width:300px;
+            height: 70px;
             text-align: center;
             line-height: 60px;
             position: absolute;
@@ -112,11 +112,13 @@ header#header{
             background-size: 200%;
             @media screen and (max-width:1060px){
                 width:400px;
-                height: 80px;
+                height: 90px;
+                font-size: 48px;
             }
             @media screen and (max-width:500px){
+                font-size: 48px;
                 width:80%;
-                height: 80px;
+                height: 90px;
             }
             &:hover{
                 background-position: right;
@@ -139,9 +141,6 @@ header#header{
                 top: 50%;
                 right:20px;
                 transform: translateY(-50%);
-            }
-            >img{
-                width:250px;
             }
             >p{
                 position: absolute;
