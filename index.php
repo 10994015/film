@@ -15,14 +15,13 @@
             <a href="javascript:;">官網資訊</a>
             <a href="javascript:;">新手教學</a>
             <a href="javascript:;">最新消息</a>
-            <a href="javascript:;">會員申請</a>
+            <a href="./web/register.php">會員申請</a>
             <a href="javascript:;">任務專區</a>
             <a href="javascript:;">排行榜</a>
             <a href="javascript:;">客服服務</a>
         </ul>
         <i class="fas fa-bars" id="menu"></i>
     </header>
-
     <div id="index">
         <div id="banner">
             <video width="640" height="480" id="video" muted playsinline loop="loop" autoplay="autoplay">
@@ -30,9 +29,11 @@
                 <source src="movie.ogg" type="video/ogg">
             </video>
             <!-- <img src="./images/banner.gif" class="bannerImg"> -->
-            <a href="javascript:;"><p>馬上加入</p><span class="line1"></span><span class="line2"></span></a>
+            <a href="./web/register.php"><p>馬上加入</p><span class="line1"></span><span class="line2"></span></a>
         </div>
     </div>
+
+    <?php include_once('./shared/footer.php'); ?>
     <script src="./js/header.js"></script>
     <script>
     const video = document.getElementById('video');

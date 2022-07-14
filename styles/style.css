@@ -117,6 +117,12 @@ header#header > #menu {
   }
 }
 
+footer#footer {
+  width: 100%;
+  height: 300px;
+  background-color: #111;
+}
+
 #index #banner {
   width: 100%;
   height: 100vh;
@@ -208,5 +214,89 @@ header#header > #menu {
   color: #fff;
   font-weight: 600;
   font-size: 20px;
+}
+
+#register {
+  width: 100%;
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#register > h1 {
+  margin-bottom: 20px;
+  font-size: 50px;
+  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+  border-bottom: 5px #111 solid;
+}
+
+#register > form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 350px;
+}
+
+#register > form > p {
+  -ms-flex-item-align: start;
+      align-self: flex-start;
+  color: #bbb;
+  margin-bottom: 10px;
+}
+
+#register > form > input {
+  width: 100%;
+  height: 40px;
+  border: 1px #aaa solid;
+  background-color: #121212;
+  outline: none;
+  margin: 8px 0;
+  padding: 0 5px;
+  color: #fff;
+  font-size: 16px;
+}
+
+#register > form > div {
+  -ms-flex-item-align: start;
+      align-self: flex-start;
+}
+
+#register > form > .chkcodeimg {
+  -ms-flex-item-align: start;
+      align-self: flex-start;
+  margin: 15px 0 8px 0;
+}
+
+#register > form > .re-chkcode {
+  -ms-flex-item-align: start;
+      align-self: flex-start;
+  color: #111;
+}
+
+#register > form > .submit-btn {
+  color: #fff;
+  font-weight: 600;
+  font-size: 16px;
+  cursor: pointer;
+  background-color: #111;
+  height: 50px;
 }
 /*# sourceMappingURL=style.css.map */
