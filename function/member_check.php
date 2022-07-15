@@ -29,7 +29,7 @@ try {
    
     }else{
       //登入失敗..............登入失敗要前往的位址，並加上msg參數
-      $url = './login.php?msg=1';
+      $url = '../web/login.php?msg=1';
     }
    
     header('Location:'.$url);  

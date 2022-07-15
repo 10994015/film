@@ -1,3 +1,8 @@
+<?php 
+require_once('./config/conn.php');
+session_start();
+
+?>
 <!DOCTYPE html>
 <html lang="zh-Hant-TW">
 <head>
@@ -19,6 +24,11 @@
             <a href="javascript:;">任務專區</a>
             <a href="javascript:;">排行榜</a>
             <a href="javascript:;">客服服務</a>
+            <?php if(isset($_SESSION['name'])){ ?>
+            <a href="./web/logout.php" id="logout">登出</a>
+            <?php }else{ ?>
+            <a href="./web/login.php">登入</a>
+            <?php } ?>
         </ul>
         <i class="fas fa-bars" id="menu"></i>
     </header>
