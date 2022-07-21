@@ -11,6 +11,7 @@
         <a href="javascript:;">會員申請</a>
         <?php if(isset($_SESSION['name'])){ ?>
             <a href="../web/logout.php">登出</a>
+            
         <?php }else{ ?>
             <a href="../web/login.php">登入</a>
         <?php } ?>

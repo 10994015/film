@@ -326,13 +326,65 @@ header#header > #menu {
   widtH: 100%;
   height: 100vh;
   position: relative;
+  overflow: hidden;
 }
 
-#index > #offweb > img {
+#index > #offweb > .txt {
+  position: absolute;
+  top: 50%;
+  left: 10%;
+  color: #fff;
+  font-family: '標楷體';
+  z-index: 9;
+}
+
+#index > #offweb > .txt > p {
+  font-weight: 600;
+  font-size: 28px;
+  font-family: '標楷體';
+}
+
+#index > #offweb > .txt > h3 {
+  font-weight: 600;
+  font-size: 88px;
+  font-family: '標楷體';
+}
+
+#index > #offweb > img.bg {
   widtH: 100%;
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
+}
+
+#index > #offweb > img.img1 {
+  position: absolute;
+  top: 15%;
+  left: 40%;
+  width: 300px;
+}
+
+#index > #offweb > img.img2 {
+  position: absolute;
+  top: 38%;
+  left: 50%;
+  width: 350px;
+  z-index: 2;
+}
+
+#index > #offweb > img.img3 {
+  position: absolute;
+  top: 38%;
+  left: 50%;
+  width: 400px;
+  z-index: 1;
+}
+
+#index > #offweb > img.img4 {
+  position: absolute;
+  top: 15%;
+  left: 65%;
+  width: 400px;
 }
 
 #index > #offweb > a {
@@ -342,7 +394,7 @@ header#header > #menu {
   text-align: center;
   line-height: 60px;
   position: absolute;
-  top: 82%;
+  top: 72%;
   left: 11%;
   background-image: -webkit-gradient(linear, right top, left top, from(#FF4694), color-stop(#db005b), to(#FF4694));
   background-image: linear-gradient(to left, #FF4694, #db005b, #FF4694);
@@ -352,6 +404,13 @@ header#header > #menu {
   font-size: 24px;
   font-weight: 600;
   font-family: '標楷體';
+  z-index: 9;
+}
+
+@media screen and (max-width: 400px) {
+  #index > #offweb > a {
+    top: 80%;
+  }
 }
 
 @media screen and (max-width: 350px) {
@@ -507,6 +566,14 @@ header#header > #menu {
   }
 }
 
+#index > #task > #taskchkbox {
+  position: absolute;
+  top: -99999999999999999px;
+  left: -99999999999999999px;
+  z-index: -9999999999;
+  opacity: 0;
+}
+
 #index > #task > .btnList {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -604,8 +671,681 @@ header#header > #menu {
   cursor: pointer;
 }
 
+#index > #task > .taskContent > img.maintaskImg-y {
+  width: 600px;
+  margin: 15px 0;
+}
+
+@media screen and (max-width: 680px) {
+  #index > #task > .taskContent > img.maintaskImg-y {
+    width: 100%;
+  }
+}
+
 #index > #task #taskContent2, #index > #task #taskContent3, #index > #task #taskContent4, #index > #task #taskContent5, #index > #task #taskContent6 {
   display: none;
+}
+
+#index > #task > #taskModule {
+  width: 100%;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  z-index: 999999;
+  display: none;
+}
+
+#index > #task > #taskModule > .back {
+  width: 100%;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+#index > #task > #taskModule > .box {
+  width: 500px;
+  height: 320px;
+  background-color: #f1f1f1;
+  border-radius: 8px;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+#index > #task > #taskModule > .box > .boxheader {
+  position: absolute;
+  top: 10px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  width: 450px;
+  height: 40px;
+  background-color: #D6DCE5;
+  text-align: center;
+  line-height: 40px;
+  font-weight: 600;
+  border-radius: 8px;
+}
+
+#index > #task > #taskModule > .box > .boxheader > i {
+  position: absolute;
+  top: 50%;
+  right: 15px;
+  font-size: 24px;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  cursor: pointer;
+}
+
+#index > #task > #taskModule > .box > .taskbox {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (100px)[4];
+      grid-template-columns: repeat(4, 100px);
+  -ms-grid-rows: (70px)[2];
+      grid-template-rows: repeat(2, 70px);
+  grid-column-gap: 5px;
+  grid-row-gap: 10px;
+  margin-bottom: 15px;
+}
+
+#index > #task > #taskModule > .box > .taskbox > img.task {
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+}
+
+#index > #task > #taskModule > .box > .taskbox > img.task.anim {
+  -webkit-animation: open 1.5s linear;
+          animation: open 1.5s linear;
+}
+
+#index > #task > #taskModule > .box > .taskbox > img.task.border {
+  border: 1px #f00 solid;
+}
+
+#index > #task > #taskModule > .box > a {
+  width: 80px;
+  height: 35px;
+  background-color: #D6DCE5;
+  border-radius: 8px;
+  text-align: center;
+  line-height: 35px;
+  font-weight: 600;
+  position: absolute;
+  bottom: 30px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  color: #222;
+}
+
+#index > #task > #taskModule > .box > a.disable {
+  background-color: #ccc;
+  color: #999;
+  cursor: default;
+}
+
+#index > #task > #gifbox {
+  width: 100%;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  z-index: 999999;
+  background: rgba(0, 0, 0, 0.75);
+  display: none;
+}
+
+#index > #task > #gifbox > img.opengift {
+  width: 350px;
+  -webkit-animation: opengift 1s linear;
+          animation: opengift 1s linear;
+  opacity: 0;
+}
+
+#index > #task > #cardMoudel {
+  width: 100%;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  z-index: 999999;
+  display: none;
+}
+
+#index > #task > #cardMoudel > .back {
+  width: 100%;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+#index > #task > #cardMoudel > .box {
+  width: 300px;
+  height: 400px;
+  background-color: #f1f1f1;
+  border-radius: 6px;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#index > #task > #cardMoudel > .box > .boxheader {
+  position: absolute;
+  top: 10px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  width: 250px;
+  height: 40px;
+  background-color: #D6DCE5;
+  text-align: center;
+  line-height: 40px;
+  font-weight: 600;
+  border-radius: 8px;
+}
+
+#index > #task > #cardMoudel > .box > .boxheader > i {
+  position: absolute;
+  top: 50%;
+  right: 15px;
+  font-size: 24px;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  cursor: pointer;
+}
+
+#index > #task > #cardMoudel > .box > img#card {
+  width: 150px;
+  height: auto;
+  margin-top: 12px;
+}
+
+#index > #task > #cardMoudel > .box > img#cardContent {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  width: 130px;
+}
+
+#index > #task > #cardMoudel > .box > .boxbottom {
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  width: 300px;
+  height: auto;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+#index > #task > #cardMoudel > .box > .boxbottom > a {
+  display: block;
+  width: 80px;
+  height: 35px;
+  background-color: #D6DCE5;
+  border-radius: 8px;
+  text-align: center;
+  line-height: 35px;
+  font-weight: 600;
+  color: #222;
+}
+
+#index > #task > #orderModule {
+  width: 100%;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  z-index: 999999;
+  display: none;
+}
+
+#index > #task > #orderModule > .back {
+  width: 100%;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+#index > #task > #orderModule > .box {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  width: 360px;
+  height: 220px;
+  background-color: #f1f1f1;
+  z-index: 99999;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+#index > #task > #orderModule > .box > .boxheader {
+  position: absolute;
+  top: 10px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  width: 300px;
+  height: 40px;
+  background-color: #D6DCE5;
+  text-align: center;
+  line-height: 40px;
+  font-weight: 600;
+  border-radius: 8px;
+}
+
+#index > #task > #orderModule > .box > .boxheader > i {
+  position: absolute;
+  top: 50%;
+  right: 15px;
+  font-size: 24px;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  cursor: pointer;
+}
+
+#index > #task > #orderModule > .box > form {
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  width: 200px;
+  height: auto;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+#index > #task > #orderModule > .box > form > #orderBtn {
+  display: block;
+  width: 80px;
+  height: 35px;
+  background-color: #D6DCE5;
+  border-radius: 8px;
+  text-align: center;
+  line-height: 35px;
+  font-weight: 600;
+  color: #222;
+  outline: none;
+  border: 1px #000 solid;
+  cursor: pointer;
+}
+
+#index > #task > #orderModule > .box > form > .orderClose {
+  display: block;
+  width: 80px;
+  height: 35px;
+  background-color: #D6DCE5;
+  border-radius: 8px;
+  text-align: center;
+  line-height: 35px;
+  font-weight: 600;
+  color: #222;
+}
+
+#index > #task > #urlModule {
+  width: 100%;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  z-index: 999999;
+  display: none;
+}
+
+#index > #task > #urlModule > .back {
+  width: 100%;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+#index > #task > #urlModule > .box {
+  width: 300px;
+  height: 220px;
+  background-color: #f1f1f1;
+  border-radius: 6px;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#index > #task > #urlModule > .box > .boxheader {
+  position: absolute;
+  top: 10px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  width: 250px;
+  height: 40px;
+  background-color: #D6DCE5;
+  text-align: center;
+  line-height: 40px;
+  font-weight: 600;
+  border-radius: 8px;
+}
+
+#index > #task > #urlModule > .box > .boxheader > i {
+  position: absolute;
+  top: 50%;
+  right: 15px;
+  font-size: 24px;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  cursor: pointer;
+}
+
+#index > #task > #storeModule {
+  width: 100%;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  z-index: 999999;
+  display: none;
+}
+
+#index > #task > #storeModule > .back {
+  width: 100%;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+#index > #task > #storeModule > .box {
+  width: 300px;
+  height: 220px;
+  background-color: #f1f1f1;
+  border-radius: 6px;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#index > #task > #storeModule > .box > .boxheader {
+  position: absolute;
+  top: 10px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  width: 250px;
+  height: 40px;
+  background-color: #D6DCE5;
+  text-align: center;
+  line-height: 40px;
+  font-weight: 600;
+  border-radius: 8px;
+}
+
+#index > #task > #storeModule > .box > .boxheader > i {
+  position: absolute;
+  top: 50%;
+  right: 15px;
+  font-size: 24px;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  cursor: pointer;
+}
+
+#index > #task > #storeModule > .box > .boxbottom {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: absolute;
+  bottom: 30px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+
+#index > #task > #storeModule > .box > .boxbottom > a {
+  display: block;
+  width: 80px;
+  height: 35px;
+  background-color: #D6DCE5;
+  border-radius: 8px;
+  text-align: center;
+  line-height: 35px;
+  font-weight: 600;
+  color: #222;
+}
+
+#index > #task > #otherModule {
+  width: 100%;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  z-index: 999999;
+  display: none;
+}
+
+#index > #task > #otherModule > .back {
+  width: 100%;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+#index > #task > #otherModule > .box {
+  width: 300px;
+  height: 220px;
+  background-color: #f1f1f1;
+  border-radius: 6px;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#index > #task > #otherModule > .box > .boxheader {
+  position: absolute;
+  top: 10px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  width: 250px;
+  height: 40px;
+  background-color: #D6DCE5;
+  text-align: center;
+  line-height: 40px;
+  font-weight: 600;
+  border-radius: 8px;
+}
+
+#index > #task > #otherModule > .box > .boxheader > i {
+  position: absolute;
+  top: 50%;
+  right: 15px;
+  font-size: 24px;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  cursor: pointer;
+}
+
+#index > #task > #otherModule > .box > .boxbottom {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: absolute;
+  bottom: 30px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+
+#index > #task > #otherModule > .box > .boxbottom > a {
+  display: block;
+  width: 80px;
+  height: 35px;
+  background-color: #D6DCE5;
+  border-radius: 8px;
+  text-align: center;
+  line-height: 35px;
+  font-weight: 600;
+  color: #222;
 }
 
 #register {
@@ -864,6 +1604,124 @@ footer#footer .footerlist > .list > p {
   }
   footer .footerlist > .list {
     margin: 30px 0;
+  }
+}
+
+@-webkit-keyframes open {
+  0% {
+    -webkit-transform: rotate(0);
+            transform: rotate(0);
+  }
+  10% {
+    -webkit-transform: rotate(15deg);
+            transform: rotate(15deg);
+  }
+  20% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  30% {
+    -webkit-transform: rotate(-15deg);
+            transform: rotate(-15deg);
+  }
+  40% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  50% {
+    -webkit-transform: rotate(15deg);
+            transform: rotate(15deg);
+  }
+  60% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  70% {
+    -webkit-transform: rotate(-15deg);
+            transform: rotate(-15deg);
+  }
+  80% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  90% {
+    -webkit-transform: rotate(15deg);
+            transform: rotate(15deg);
+  }
+  100% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+}
+
+@keyframes open {
+  0% {
+    -webkit-transform: rotate(0);
+            transform: rotate(0);
+  }
+  10% {
+    -webkit-transform: rotate(15deg);
+            transform: rotate(15deg);
+  }
+  20% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  30% {
+    -webkit-transform: rotate(-15deg);
+            transform: rotate(-15deg);
+  }
+  40% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  50% {
+    -webkit-transform: rotate(15deg);
+            transform: rotate(15deg);
+  }
+  60% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  70% {
+    -webkit-transform: rotate(-15deg);
+            transform: rotate(-15deg);
+  }
+  80% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  90% {
+    -webkit-transform: rotate(15deg);
+            transform: rotate(15deg);
+  }
+  100% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+}
+
+@-webkit-keyframes opengift {
+  0% {
+    opacity: 1;
+  }
+  60% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes opengift {
+  0% {
+    opacity: 1;
+  }
+  60% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
   }
 }
 /*# sourceMappingURL=style.css.map */
