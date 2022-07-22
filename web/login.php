@@ -62,7 +62,7 @@ if(isset($_GET['mailok']) && $_GET['mailok']==1){
     <div id="login">
         <form action="../function/member_check.php" method="POST">
             
-            <p>登入您的XXXX帳號</p>
+            <p>登入您的影視優帳號</p>
             <input type="text" name="username" class="mem_mail" placeholder="請輸入帳號...." required/>
             <input type="password" name="pwd" class="mem_pwd" placeholder="請輸入密碼...." required/>
             <div class="link">

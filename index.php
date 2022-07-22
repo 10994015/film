@@ -1,7 +1,6 @@
 <?php 
 require_once('./config/conn.php');
 session_start();
-
 ?>
 <!DOCTYPE html>
 <html lang="zh-Hant-TW">
@@ -18,13 +17,13 @@ session_start();
     <header id="header">
         <a href="./"><img src="./images/logo.png"></a>
         <ul id="nav">
-            <a href="javascript:;">官網資訊</a>
-            <a href="javascript:;">新手教學</a>
-            <a href="javascript:;">最新消息</a>
+            <a href="./web/information.php">官網資訊</a>
+            <a href="./web/newbie.php">新手教學</a>
+            <a href="./web/news.php">最新消息</a>
             <a href="./web/register.php">會員申請</a>
-            <a href="javascript:;">任務專區</a>
-            <a href="javascript:;">排行榜</a>
-            <a href="javascript:;">客服服務</a>
+            <a href="./#task">任務專區</a>
+            <a href="./web/rank.php">排行榜</a>
+            <a href="./web/customer.php">客服服務</a>
             <?php if(isset($_SESSION['name'])){ ?>
             <a href="./web/logout.php" id="logout">登出</a>
             <p style="color:#fff">餘額:<?php echo $_SESSION['money'];?></p>
