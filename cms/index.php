@@ -44,23 +44,18 @@ if(isset($_SESSION['name'])){
     </style>
 </head>
 <body>
-<?php if($_SESSION['mem_level'] > 2) {?>
+<?php if($_SESSION['mem_level'] >= 9) {?>
     <h6 id="logo"><p>XXXX管理後臺</p><p></p></h6>
     <div class="content">
        <div class="cms">
-            
-            <div class="usercontent">
-               <div>
-                <h3 id="contentusername">請選擇帳號</h3>
-                    <h3 id="contentname"></h3>
-                    <h3 id="contentphone"></h3>
-                    <h3 id="contentmoney"></h3>
-                    <h3 id="contenturl"></h3>
-                    <h3 id="contentup"></h3>
-                    <div id="qrcode"></div>
-               </div>
-                <div id="update">編輯</div>
-            </div>
+       <div id="toolbar">
+            <p>影視優管理後台</p>
+            <a href="./logout.php">登出</a>
+        </div>
+            <header id="header">
+                <!-- <a href="javascript:;">IP設定</a> -->
+                <a href="javascript:;" class="focus"><i class="fa-solid fa-box-archive"></i>代理管理</a>
+            </header>
             <div class="member">
               
                 <?php foreach($admin_member as $item){?>
@@ -132,6 +127,19 @@ if(isset($_SESSION['name'])){
 
                 <?php } ?>
             </div>
+            <div class="usercontent">
+               <div>
+                <h3 id="contentusername">請選擇帳號</h3>
+                    <h3 id="contentname"></h3>
+                    <h3 id="contentphone"></h3>
+                    <h3 id="contentmoney"></h3>
+                    <h3 id="contenturl"></h3>
+                    <h3 id="contentup"></h3>
+                    <div id="qrcode"></div>
+               </div>
+                <div id="update">編輯</div>
+            </div>
+            
        </div>
     <?php }else{ ?>
         <div style="background:#111;width:100%;height:100vh;display:flex;justify-content: center;align-items: center;">
