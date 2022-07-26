@@ -12,7 +12,7 @@ if(isset($_GET['username']) && $_GET['username'] != ""){
         $row_RS = $stmt -> fetch(PDO::FETCH_ASSOC);
     }
 }
-
+if(isset($_SESSION['name'])){
 ?>
 
 <!DOCTYPE html>
@@ -72,3 +72,8 @@ if(isset($_GET['username']) && $_GET['username'] != ""){
     </form>
 </body>
 </html>
+
+</html>
+<?php }else{
+header('Location:./login.php');
+ } ?>

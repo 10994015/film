@@ -231,7 +231,7 @@ if(isset($_SESSION['name'])){
 </html>
 <?php
 }else{
-echo "找不到此頁面。";
+header('Location:./login.php');
 ?>
 
 <?php } ?>
