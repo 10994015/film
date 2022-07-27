@@ -54,15 +54,15 @@ session_start();
             <div class="newsList">
                 <a href="javascript:;" class="newsItem">
                     <img src="./images/000.png">
-                    <p>幹您娘幹您娘幹您娘幹您娘幹您娘幹您娘幹您娘幹您娘</p>
+                    <p>220311 0312~0313超好康的周末加碼來囉~</p>
                 </a>
                 <a href="javascript:;" class="newsItem">
                     <img src="./images/000.png">
-                    <p>幹您娘幹您娘幹您娘幹您娘幹您娘幹您娘幹您娘幹您娘</p>
+                    <p>220310 3月10日(四)網站維修公告</p>
                 </a>
                 <a href="javascript:;" class="newsItem">
                     <img src="./images/000.png">
-                    <p>幹您娘幹您娘幹您娘幹您娘幹您娘幹您娘幹您娘幹您娘</p>
+                    <p>220304 0305~0306超好康的周末加碼來囉~</p>
                 </a>
             </div>
             <p>INSYO</p>

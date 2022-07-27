@@ -274,16 +274,11 @@ header#header > #menu {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
   width: 100%;
-}
-
-@media screen and (max-width: 860px) {
-  #index > #news > .newsList {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-  }
 }
 
 #index > #news > .newsList > .newsItem {
@@ -298,7 +293,7 @@ header#header > #menu {
       -ms-flex-align: center;
           align-items: center;
   margin: 0 20px;
-  width: 350px;
+  width: 320px;
 }
 
 @media screen and (max-width: 860px) {
@@ -456,9 +451,9 @@ header#header > #menu {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -476,7 +471,7 @@ header#header > #menu {
 }
 
 #index > #film > .left {
-  width: 300px;
+  width: 20%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -487,10 +482,11 @@ header#header > #menu {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  margin: 0 15px;
 }
 
 #index > #film > .left > img {
-  width: 300px;
+  width: 250px;
 }
 
 #index > #film > .left > h3 {
@@ -513,7 +509,8 @@ header#header > #menu {
 }
 
 #index > #film > .right {
-  width: 800px;
+  width: 80%;
+  margin: 0 15px;
 }
 
 @media screen and (max-width: 1100px) {
@@ -1392,6 +1389,12 @@ header#header > #menu {
   width: 350px;
 }
 
+@media screen and (max-width: 350px) {
+  #register > form {
+    width: 95%;
+  }
+}
+
 #register > form > p {
   -ms-flex-item-align: start;
       align-self: flex-start;
@@ -1477,6 +1480,12 @@ header#header > #menu {
       -ms-flex-align: center;
           align-items: center;
   width: 350px;
+}
+
+@media screen and (max-width: 350px) {
+  #login > form {
+    width: 95%;
+  }
 }
 
 #login > form > p {
