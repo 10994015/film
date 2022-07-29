@@ -157,7 +157,7 @@ header#header{
     }
     >#news{
         width:100%;
-        min-height: 100vh;
+        padding: 60px 0;
         background-color: #ECE7E1;
         position: relative;
         z-index: 0;
@@ -210,7 +210,7 @@ header#header{
                 display: flex;
                 flex-direction: column;
                 align-items: center;
-                margin:0 20px;
+                margin:0 40px;
                 width:320px;
                 @media screen and (max-width:860px){
                     flex-direction: column;
@@ -1147,6 +1147,7 @@ header#header{
         }
         >p{
             font-size: 17px;
+            line-height: 2;
         }
     }
 }

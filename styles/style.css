@@ -217,7 +217,7 @@ header#header > #menu {
 
 #index > #news {
   width: 100%;
-  min-height: 100vh;
+  padding: 60px 0;
   background-color: #ECE7E1;
   position: relative;
   z-index: 0;
@@ -292,7 +292,7 @@ header#header > #menu {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin: 0 20px;
+  margin: 0 40px;
   width: 320px;
 }
 
@@ -1619,6 +1619,7 @@ header#header > #menu {
 
 #information > .txt > p {
   font-size: 17px;
+  line-height: 2;
 }
 
 #customer {
