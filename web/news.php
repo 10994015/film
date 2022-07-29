@@ -1,6 +1,10 @@
 <?php 
 require_once('../config/conn.php');
 session_start();
+
+$sql_str = "SELECT * FROM news ORDER BY id DESC";
+$RS_mb = $conn -> query($sql_str);
+$total_RS_mb = $RS_mb -> rowCount();
 ?>
 
 <!DOCTYPE html>
@@ -16,14 +20,14 @@ session_start();
     <?php include_once('../shared/header.php'); ?>
     <div id="news">
         <div class="newsList">
-            <?php for($n=0;$n<=10;$n++){?>
+            <?php foreach($RS_mb as $item){?>
             <div class="newsItem">
-                <img src="../images/000.png">
+                <?php if($item['type']==1){echo ' <img src="../images/A.png">'; }elseif($item['type']==2){echo ' <img src="../images/B.png">';}else{echo  ' <img src="../images/C.png">';} ?>
                 <div class="content">
-                    <span class="day">22/07/23</span>
-                    <h3>標題標題標題標題標題標題標題標題標題標題標題標題</h3>
-                    <p>內文嫩文內文內文嫩文內文內文嫩文內文內文嫩文內文內文嫩文內文內文嫩文內文內文嫩文內文內文嫩文內文內文嫩文內文內文嫩文內文內文嫩文內文內文嫩文內文</p>
-                    <a href="./post.php">閱讀文章-＞</a>
+                    <span class="day"><?php echo $item['date']; ?></span>
+                    <h3><?php echo $item['title']; ?></h3>
+                    <p><?php echo $item['content']; ?></p>
+                    <a href="./post.php">閱讀文章>>></a>
                 </div>
             </div>
             <?php } ?>

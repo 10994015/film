@@ -15,6 +15,11 @@ session_start();
     <?php include_once("../shared/header.php"); ?>
     <div id="newbie">
         <img src="../images/newbie.png">
+        <?php if(isset($_SESSION['name'])){ ?>
+        <a href="./register.php">馬上進行第一步</a>
+        <?php }else{ ?>
+        <a href="./customer.php">馬上進行第一步</a>
+        <?php } ?>
     </div>
     <?php include_once('../shared/footer.php'); ?>
 </body>

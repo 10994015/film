@@ -99,6 +99,17 @@ header#header{
             height: 100%;
             object-fit: cover;
         }
+        >.bannerLogo{
+            display: block;
+            width:300px;
+            height: 70px;
+            text-align: center;
+            line-height: 60px;
+            position: absolute;
+            top: 65%;
+            left:50%;
+            transform: translateX(-50%);
+        }
         >a{
             display: block;
             width:300px;
@@ -106,7 +117,7 @@ header#header{
             text-align: center;
             line-height: 60px;
             position: absolute;
-            top: 70%;
+            top: 80%;
             left:50%;
             transform: translateX(-50%);
             background-image: linear-gradient(to left,#FF4694,#db005b,#FF4694);
@@ -438,6 +449,7 @@ header#header{
             flex-direction: column;
             align-items: center;
             padding: 10px 0;
+            justify-content: center;
             @media screen and (max-width:1100px){
                 margin-right: 0;
                 margin:30px 0;
@@ -475,6 +487,10 @@ header#header{
                 @media screen and (max-width:680px){
                     width:100%;
                 }
+            }
+            >img.h{
+                width:100px;
+                cursor: pointer;
             }
            
         }
@@ -1158,7 +1174,7 @@ header#header{
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    background-image: url('../images/bg3.png');
+    background-image: url('../images/qrcode底圖.jpg');
     background-size: cover;
     background-position: center;
     color:#fff;
@@ -1213,6 +1229,64 @@ header#header{
             width:100%;
         }
     }
+    >a{
+        display: block;
+        width:300px;
+        height: 70px;
+        text-align: center;
+        line-height: 60px;
+        position: absolute;
+        top: 80%;
+        left:50%;
+        color:#fff;
+        font-size: 20px;
+        font-weight: 600;
+        transform: translateX(-50%);
+        background-image: linear-gradient(to left,#FF4694,#db005b,#FF4694);
+        border-radius: 5px;
+        background-size: 200%;
+        @media screen and (max-width:1060px){
+            width:400px;
+            height: 90px;
+            font-size: 48px;
+        }
+        @media screen and (max-width:500px){
+            font-size: 48px;
+            width:80%;
+            height: 90px;
+        }
+        &:hover{
+            background-position: right;
+            transition: .5s;
+        }
+        >span.line1{
+            width:2px;
+            height: 35px;
+            background-color: #fff;
+            position: absolute;
+            top: 50%;
+            left:20px;
+            transform: translateY(-50%);
+        }
+        >span.line2{
+            width:2px;
+            height: 35px;
+            background-color: #fff;
+            position: absolute;
+            top: 50%;
+            right:20px;
+            transform: translateY(-50%);
+        }
+        >p{
+            position: absolute;
+            top: 50%;
+            left:50%;
+            transform: translate(-50%,-50%);
+            color:#fff;
+            font-weight: 600;
+            font-size: 20px;
+        }
+    }
 }
 #rank{
     width:100%;
@@ -1222,7 +1296,7 @@ header#header{
     align-items: center;
     flex-direction: column;
     background-color: #ECE8E1;
-    background-image: url('../images/bg4.png');
+    background-image: url('../images/排行榜底圖.jpg');
     background-size: cover;
     background-position:  center;
     >.rankbox{
@@ -1311,6 +1385,9 @@ header#header{
                 display: flex;
                 flex-direction: column;
                 margin:0 10px;
+                padding: 10px;
+                box-sizing: border-box;
+                height: 200px;
                 >span{
                     display: block;
                     font-size: 16px;
@@ -1323,15 +1400,27 @@ header#header{
                     margin:3px 0;
                 }
                 >p{
-                    color:#aaa;
+                    color:#444;
                     font-size: 14px;
                     margin:3px 0;
+                    display: -webkit-box;
+                    -webkit-box-orient: vertical;
+                    -webkit-line-clamp: 2;
+                    overflow: hidden;
+
                 }
                 >a{
                     font-size: 17px;
-                    color:#E04026;
+                    color:#000;
                     font-weight: 600;
                     margin:3px 0;
+                    margin-left: auto;
+                    display: block;
+                    width:150px;
+                    height: 40px;
+                    text-align: center;
+                    line-height: 40px;
+                    background: linear-gradient(to bottom,#FB6B6A,#E37D4C );
                 }
             }
         }

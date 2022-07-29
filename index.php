@@ -1,6 +1,9 @@
 <?php 
 require_once('./config/conn.php');
 session_start();
+$sql_str = "SELECT * FROM news ORDER BY id DESC limit 3";
+$RS_mb = $conn -> query($sql_str);
+$total_RS_mb = $RS_mb -> rowCount();
 ?>
 <!DOCTYPE html>
 <html lang="zh-Hant-TW">
@@ -45,25 +48,20 @@ session_start();
                 <source src="movie.ogg" type="video/ogg">
             </video>
             <!-- <img src="./images/banner.gif" class="bannerImg"> -->
+            <img src="./images/logo.png" class="bannerLogo">
             <a href="./web/register.php"><p>馬上加入</p><span class="line1"></span><span class="line2"></span></a>
         </div>
         <div id="news">
             <h2>INSYO</h2>
             <span>最新消息</span>
-           
             <div class="newsList">
-                <a href="javascript:;" class="newsItem">
-                    <img src="./images/000.png">
-                    <p>220311 0312~0313超好康的周末加碼來囉~</p>
+                <?php foreach($RS_mb as $item){ ?>
+                <a href="./web/post.php?id=<?php echo $item['id']; ?>" class="newsItem">
+                    <?php if($item['type']==1){echo ' <img src="./images/A.png">'; }elseif($item['type']==2){echo ' <img src="./images/B.png">';}else{echo  ' <img src="./images/C.png">';} ?>
+                    <p><?php echo $item['title']; ?></p>
                 </a>
-                <a href="javascript:;" class="newsItem">
-                    <img src="./images/000.png">
-                    <p>220310 3月10日(四)網站維修公告</p>
-                </a>
-                <a href="javascript:;" class="newsItem">
-                    <img src="./images/000.png">
-                    <p>220304 0305~0306超好康的周末加碼來囉~</p>
-                </a>
+                <?php } ?>
+               
             </div>
             <p>INSYO</p>
         </div>
@@ -184,10 +182,10 @@ session_start();
                 <img src="./images/y1.jpg" class="maintaskImg-y">
                 <img src="./images/y2.jpg" class="maintaskImg-y">
                 <img src="./images/y3.jpg" class="maintaskImg-y">
+                <img src="./images/h.png" class="h orderTaskBtn">
             </div>
             <div class="taskContent" id="taskContent5">
                 <img src="./images/pig.png" class="maintaskImg">
-                <img src="./images/進度條.png">
             </div>
             <div class="taskContent" id="taskContent6">
                 <img src="./images/F.png">

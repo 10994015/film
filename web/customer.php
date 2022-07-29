@@ -14,7 +14,7 @@ session_start();
 <body>
     <?php include_once('../shared/header.php'); ?>
     <div id="customer">
-        <h2>聯繫客服</h2>
+        <h2>聯繫客服驗證帳號</h2>
         <img src="../images/0024.png">
         <p>LINE ID: oep18541</p>
     </div>
