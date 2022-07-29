@@ -327,7 +327,7 @@ header#header > #menu {
   widtH: 100%;
   margin-top: 8px;
   font-size: 22px;
-  color: #666;
+  color: #fff;
 }
 
 #index > #offweb {
@@ -1837,78 +1837,7 @@ header#header > #menu {
   width: 800px;
 }
 
-#rank > .rankbox > .item {
-  width: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  height: 60px;
-  -webkit-box-shadow: 0 2px 2px #ccc;
-          box-shadow: 0 2px 2px #ccc;
-  margin-bottom: 2px;
-}
-
-#rank > .rankbox > .item > p {
-  height: 60px;
-  width: 200px;
-  line-height: 60px;
-  text-align: center;
-}
-
-#rank > .rankbox > .item > p.p1 {
-  background-color: #E3DFD9;
-  font-weight: 600;
-  font-family: 'Impact';
-  font-size: 22px;
-}
-
-#rank > .rankbox > .item > p.p2 {
-  background-color: #DBD9D2;
-}
-
-#rank > .rankbox > .item > p.p3 {
-  background-color: #DEDBD5;
-}
-
-#rank > .rankbox > .item > p.p4 {
-  background-color: #E3DFD9;
-}
-
-#rank > .rankbox > .ranktitle {
-  height: 50px;
-}
-
-#rank > .rankbox > .ranktitle > p {
-  font-weight: 600;
-  height: 50px;
-  line-height: 50px;
-  font-size: 16px;
-}
-
-#rank > .rankbox > .ranktitle > p.p1 {
-  font-size: 16px;
-}
-
-#rank > .rankbox > .no1 {
-  height: 100px;
-}
-
-#rank > .rankbox > .no1 > p {
-  height: 100px;
-  line-height: 100px;
-  font-size: 24px;
-}
-
-#rank > .rankbox > .no1 > p.p1 {
-  font-size: 45px;
-}
-
-#news {
-  width: 100%;
-  padding: 200px 0;
+#rank > .rankbox > .top {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1918,11 +1847,150 @@ header#header > #menu {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+#rank > .rankbox > .top > .item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 0 10px;
+}
+
+#rank > .rankbox > .top > .item > img {
+  width: 80px;
+  margin: 0 10px;
+  display: block;
+}
+
+#rank > .rankbox > .top > .item > .content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  background-color: #ECE8E1;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #fff;
+  font-weight: 600;
+  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+}
+
+#rank > .rankbox > .top > .item > .content > h2 {
+  font-size: 30px;
+  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+}
+
+#rank > .rankbox > .top > .item > .content > p {
+  font-size: 20px;
+}
+
+#rank > .rankbox > .rankTable {
+  width: 800px;
+  font-weight: 600;
+  margin-top: 50px;
+}
+
+#rank > .rankbox > .rankTable > .title {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#rank > .rankbox > .rankTable > .title > p {
+  text-align: center;
+  width: 200px;
+  color: #fff;
+  font-size: 19px;
+}
+
+#rank > .rankbox > .rankTable > .item {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 20px 0;
+}
+
+#rank > .rankbox > .rankTable > .item > h3 {
+  color: #FFD56F;
+  text-align: center;
+  width: 200px;
+  font-size: 28px;
+}
+
+#rank > .rankbox > .rankTable > .item > .infor {
+  background-color: rgba(255, 255, 255, 0.7);
+  border-radius: 25px;
+  width: 600px;
+  height: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#rank > .rankbox > .rankTable > .item > .infor p {
+  width: 200px;
+  text-align: center;
+  font-size: 18px;
+}
+
+#news {
+  width: 100%;
+  padding: 150px 0;
+  height: 100vh;
+  overflow-y: scroll;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background: url("../images/newsbg.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+#news::-webkit-scrollbar {
+  width: 1em;
 }
 
 #news > .newsList {
@@ -1969,27 +2037,29 @@ header#header > #menu {
       -ms-flex-direction: column;
           flex-direction: column;
   margin: 0 10px;
-  padding: 10px;
+  padding: 20px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   height: 200px;
+  width: 370px;
+  background-color: rgba(0, 0, 0, 0.5);
 }
 
 #news > .newsList > .newsItem > .content > span {
   display: block;
   font-size: 16px;
-  color: #999;
+  color: #fff;
 }
 
 #news > .newsList > .newsItem > .content > h3 {
   font-weight: 600;
   font-size: 20px;
-  color: #222;
+  color: #fff;
   margin: 3px 0;
 }
 
 #news > .newsList > .newsItem > .content > p {
-  color: #444;
+  color: #fff;
   font-size: 14px;
   margin: 3px 0;
   display: -webkit-box;
