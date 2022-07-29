@@ -21,8 +21,8 @@ session_start();
                     <div class="content">
                         <h2 style="color:#F9DE83">1ST</h2>
                         <p>zxc559995</p>
-                        <p>王曉明</p>
-                        <p>$1500000</p>
+                        <p>王O明</p>
+                        <p>$1800000</p>
                     </div>
                 </div>
                 <div class="item">
@@ -30,8 +30,8 @@ session_start();
                     <div class="content">
                         <h2 style="color:#E8E9ED">2ST</h2>
                         <p>zxc559995</p>
-                        <p>陳景宣</p>
-                        <p>$1500000</p>
+                        <p>陳O宣</p>
+                        <p>$16055440</p>
                     </div>
                 </div>
                 <div class="item">
@@ -39,8 +39,8 @@ session_start();
                     <div class="content">
                         <h2 style="color:#B4967C">3ST</h2>
                         <p>zxc559995</p>
-                        <p>黃昭和</p>
-                        <p>$1500000</p>
+                        <p>黃O和</p>
+                        <p>$1504400</p>
                     </div>
                 </div>
 
@@ -57,7 +57,7 @@ session_start();
                     <div class="infor">
                         <p>955455</p>
                         <p>asdd15886</p>
-                        <p>陳聰明</p>
+                        <p>陳O明</p>
                     </div>
                 </div>
                 <div class="item">
@@ -65,7 +65,7 @@ session_start();
                     <div class="infor">
                         <p>884535</p>
                         <p>tt8897</p>
-                        <p>黃順安</p>
+                        <p>黃O安</p>
                     </div>
                 </div>
                 <div class="item">
@@ -73,7 +73,7 @@ session_start();
                     <div class="infor">
                         <p>822354</p>
                         <p>r002568778</p>
-                        <p>簡里安</p>
+                        <p>簡O安</p>
                     </div>
                 </div>
                 <div class="item">
@@ -81,7 +81,7 @@ session_start();
                     <div class="infor">
                         <p>801220</p>
                         <p>yyyyyp333</p>
-                        <p>陳恩</p>
+                        <p>陳O</p>
                     </div>
                 </div>
                 <div class="item">
@@ -89,7 +89,7 @@ session_start();
                     <div class="infor">
                         <p>766887</p>
                         <p>qaz2582582</p>
-                        <p>彭玉暄</p>
+                        <p>彭O暄</p>
                     </div>
                 </div>
                 <div class="item">
@@ -97,7 +97,7 @@ session_start();
                     <div class="infor">
                         <p>699874</p>
                         <p>mm3939889</p>
-                        <p>吳承恩</p>
+                        <p>吳O恩</p>
                     </div>
                 </div>
                 <div class="item">

@@ -51,7 +51,7 @@ $total_RS_mb = $RS_mb -> rowCount();
             <img src="./images/logo.png" class="bannerLogo">
             <a href="./web/register.php"><p>馬上加入</p><span class="line1"></span><span class="line2"></span></a>
         </div>
-        <div id="news">
+        <div id="news" class="">
             <h2>INSYO</h2>
             <span>最新消息</span>
             <div class="newsList">

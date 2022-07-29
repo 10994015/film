@@ -22,6 +22,7 @@ header#header{
     z-index: 9999;
     @media screen and (max-width:1060px){
         height: 120px;
+        justify-content: center;
     }
     >a{
         width:150px;
@@ -174,7 +175,7 @@ header#header{
         z-index: 0;
         overflow: hidden;
         @media screen and (max-width:1000px){
-            height: 160vh;
+            height: 200vh;
         }
         > h2{
             -webkit-text-stroke: 1px black;
@@ -237,7 +238,7 @@ header#header{
                     widtH:100%;
                     margin-top: 8px;
                     font-size: 22px;
-                    color:#fff;
+                    color:#000;
                 }
             }
         }
@@ -315,7 +316,7 @@ header#header{
             font-family: '標楷體';
             z-index: 9;
             @media screen and (max-width:400px){
-                top:80%;
+                top:84%;
                 
             }
             @media screen and (max-width:350px){
@@ -1385,7 +1386,7 @@ header#header{
        }
     }
 }
-#news{
+#newsPage{
     width:100%;
     padding: 150px 0;
     height: 100vh;

@@ -18,7 +18,7 @@ $total_RS_mb = $RS_mb -> rowCount();
 </head>
 <body>
     <?php include_once('../shared/header.php'); ?>
-    <div id="news">
+    <div id="newsPage">
         <div class="newsList">
             <?php foreach($RS_mb as $item){?>
             <div class="newsItem">
@@ -27,7 +27,7 @@ $total_RS_mb = $RS_mb -> rowCount();
                     <span class="day"><?php echo $item['date']; ?></span>
                     <h3><?php echo $item['title']; ?></h3>
                     <p><?php echo $item['content']; ?></p>
-                    <a href="./post.php">閱讀文章>>></a>
+                    <a href="./post.php?id=<?php echo $item['id']; ?>">閱讀文章>>></a>
                 </div>
             </div>
             <?php } ?>

@@ -35,6 +35,9 @@ header#header {
 @media screen and (max-width: 1060px) {
   header#header {
     height: 120px;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
 }
 
@@ -239,7 +242,7 @@ header#header > #menu {
 
 @media screen and (max-width: 1000px) {
   #index > #news {
-    height: 160vh;
+    height: 200vh;
   }
 }
 
@@ -342,7 +345,7 @@ header#header > #menu {
   widtH: 100%;
   margin-top: 8px;
   font-size: 22px;
-  color: #fff;
+  color: #000;
 }
 
 #index > #offweb {
@@ -432,7 +435,7 @@ header#header > #menu {
 
 @media screen and (max-width: 400px) {
   #index > #offweb > a {
-    top: 80%;
+    top: 84%;
   }
 }
 
@@ -1983,7 +1986,7 @@ header#header > #menu {
   font-size: 18px;
 }
 
-#news {
+#newsPage {
   width: 100%;
   padding: 150px 0;
   height: 100vh;
@@ -2007,11 +2010,11 @@ header#header > #menu {
   background-repeat: no-repeat;
 }
 
-#news::-webkit-scrollbar {
+#newsPage::-webkit-scrollbar {
   width: 1em;
 }
 
-#news > .newsList {
+#newsPage > .newsList {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -2026,12 +2029,12 @@ header#header > #menu {
 }
 
 @media screen and (max-width: 75px) {
-  #news > .newsList {
+  #newsPage > .newsList {
     width: 100%;
   }
 }
 
-#news > .newsList > .newsItem {
+#newsPage > .newsList > .newsItem {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -2044,7 +2047,7 @@ header#header > #menu {
   margin: 20px 0;
 }
 
-#news > .newsList > .newsItem > img {
+#newsPage > .newsList > .newsItem > img {
   min-width: 280px;
   height: 200px;
   -o-object-fit: cover;
@@ -2053,19 +2056,19 @@ header#header > #menu {
 }
 
 @media screen and (max-width: 750px) {
-  #news > .newsList > .newsItem > img {
+  #newsPage > .newsList > .newsItem > img {
     max-width: 20%;
     min-width: 150px;
   }
 }
 
 @media screen and (max-width: 550px) {
-  #news > .newsList > .newsItem > img {
+  #newsPage > .newsList > .newsItem > img {
     display: none;
   }
 }
 
-#news > .newsList > .newsItem > .content {
+#newsPage > .newsList > .newsItem > .content {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -2083,25 +2086,25 @@ header#header > #menu {
 }
 
 @media screen and (max-width: 430px) {
-  #news > .newsList > .newsItem > .content {
+  #newsPage > .newsList > .newsItem > .content {
     min-width: 100%;
   }
 }
 
-#news > .newsList > .newsItem > .content > span {
+#newsPage > .newsList > .newsItem > .content > span {
   display: block;
   font-size: 16px;
   color: #fff;
 }
 
-#news > .newsList > .newsItem > .content > h3 {
+#newsPage > .newsList > .newsItem > .content > h3 {
   font-weight: 600;
   font-size: 20px;
   color: #fff;
   margin: 3px 0;
 }
 
-#news > .newsList > .newsItem > .content > p {
+#newsPage > .newsList > .newsItem > .content > p {
   color: #fff;
   font-size: 14px;
   margin: 3px 0;
@@ -2111,7 +2114,7 @@ header#header > #menu {
   overflow: hidden;
 }
 
-#news > .newsList > .newsItem > .content > a {
+#newsPage > .newsList > .newsItem > .content > a {
   font-size: 17px;
   color: #000;
   font-weight: 600;
@@ -2127,7 +2130,7 @@ header#header > #menu {
 }
 
 @media screen and (max-width: 550px) {
-  #news > .newsList > .newsItem > .content > a {
+  #newsPage > .newsList > .newsItem > .content > a {
     margin-right: auto;
     margin-left: 0;
   }
