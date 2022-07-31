@@ -9,7 +9,7 @@
         <a href="../web/register.php">會員申請</a>
         <a href="../#task">任務專區</a>
         <a href="../web/rank.php">排行榜</a>
-        <a href="../web/customer.php">客服服務</a>
+        <a href="../web/customer.php">聯繫客服</a>
         <?php if(isset($_SESSION['name'])){ ?>
             <a href="../web/logout.php">登出</a>
         <?php }else{ ?>
