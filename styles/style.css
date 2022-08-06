@@ -339,6 +339,8 @@ header#header > #menu {
 
 #index > #news > .newsList > .newsItem > img {
   width: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 
 #index > #news > .newsList > .newsItem > p {
@@ -2098,9 +2100,9 @@ header#header > #menu {
 
 #newsPage > .newsList > .newsItem > img {
   min-width: 280px;
-  height: 200px;
-  -o-object-fit: cover;
-     object-fit: cover;
+  height: 220px;
+  -o-object-fit: contain;
+     object-fit: contain;
   margin: 0 10px;
 }
 
@@ -2129,7 +2131,7 @@ header#header > #menu {
   padding: 20px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  height: 200px;
+  height: 220px;
   width: 370px;
   background-color: rgba(0, 0, 0, 0.5);
 }
@@ -2167,7 +2169,7 @@ header#header > #menu {
   font-size: 17px;
   color: #000;
   font-weight: 600;
-  margin: 3px 0;
+  margin: 8px 0;
   margin-left: auto;
   display: block;
   width: 150px;
@@ -2209,8 +2211,16 @@ header#header > #menu {
 }
 
 #post > .pagePost > img {
-  width: 100%;
+  width: 350px;
+  margin: 0 auto;
   margin-bottom: 20px;
+  display: block;
+}
+
+@media screen and (max-width: 350px) {
+  #post > .pagePost > img {
+    width: 100%;
+  }
 }
 
 #post > .pagePost > span {

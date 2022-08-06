@@ -233,6 +233,7 @@ header#header{
                 }
                 >img{
                     width:100%;
+                    object-fit: contain;
                 }
                 > p {
                     widtH:100%;
@@ -1460,8 +1461,8 @@ header#header{
             margin:20px 0;
             >img{
                 min-width:280px;
-                height: 200px;
-                object-fit: cover;
+                height: 220px;
+                object-fit: contain;
                 margin:0 10px;
                 @media screen and (max-width:750px){
                     max-width:20%;
@@ -1477,7 +1478,7 @@ header#header{
                 margin:0 10px;
                 padding: 20px;
                 box-sizing: border-box;
-                height: 200px;
+                height: 220px;
                 width:370px;
                 background-color: rgba(0,0,0,.5);
                 @media screen and (max-width:430px){
@@ -1508,7 +1509,7 @@ header#header{
                     font-size: 17px;
                     color:#000;
                     font-weight: 600;
-                    margin:3px 0;
+                    margin:8px 0;
                     margin-left: auto;
                     display: block;
                     width:150px;
@@ -1536,8 +1537,13 @@ header#header{
     >.pagePost{
         max-width:800px;
         >img{
-            width:100%;
+            width:350px;
+            margin:0 auto;
             margin-bottom: 20px;
+            display: block;
+            @media screen and (max-width:350px){
+                width:100%;
+            }
         }
         >span{
             color:#aaa;
